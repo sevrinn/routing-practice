@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+import Home from './components/Home';
+import { Router } from '@reach/router';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>I'm ready</h1>
+      <Router>
+        <Home path={"/"} />
+      </Router>
+      
     </div>
   );
 }
 
+ 
 export default App;
